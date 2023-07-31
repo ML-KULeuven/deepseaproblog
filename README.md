@@ -1,8 +1,10 @@
-# DeepSeaProbLog
+# DeepSeaProbLog (Beta)
 
 This is the official repository of [DeepSeaProbLog](https://proceedings.mlr.press/v216/de-smet23a.html).
 DeepSeaProbLog is an extension of [DeepProbLog](https://github.com/ML-KULeuven/deepproblog) that integrates logic-based reasoning with (deep)
 probabilistic programming in discrete-continuous domains.
+
+This repository is in beta and will be frequently updated. Basic functionality is complete, yet feedback is most welcome.
 
 ## Requirements
 
