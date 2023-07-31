@@ -10,9 +10,7 @@ def load_data(DIGITS, CUR):
         D_val = pickle.load(open(f"examples/DATES/data/{DIGITS}_digits" + CUR + "/val_data.pkl", "rb"))
         D_test = pickle.load(open(f"examples/DATES/data/{DIGITS}_digits" + CUR + "/test_data.pkl", "rb"))
         D_regressval = pickle.load(open(f"examples/DATES/data/{DIGITS}_digits" + "_regress" + "/val_data.pkl", "rb"))
-        # D_classval = pickle.load(open(f"examples/DATES/data/{DIGITS}_digits"+ "_cur" + "/val_data.pkl", "rb"))
         D_regresstest = pickle.load(open(f"examples/DATES/data/{DIGITS}_digits" + "_regress" + "/test_data.pkl", "rb"))
-        # D_classtest = pickle.load(open(f"examples/DATES/data/{DIGITS}_digits"+ "_cur" + "/test_data.pkl", "rb"))
         D_cur = pickle.load(open(f"examples/DATES/data/{DIGITS}_digits" + "_regress" + "/train_data.pkl", "rb"))
     except Exception:
         D = create_dataloader("train", batch_size=10, digits=DIGITS, cur=CUR)

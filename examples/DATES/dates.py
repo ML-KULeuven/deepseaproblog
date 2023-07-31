@@ -1,19 +1,15 @@
 import pickle
-import multiprocessing
 import os
-import time
 
 from examples.DATES.architectures import *
 from model import Model
 from network import Network, PCF
-from query import Query
 from engines.tensor_ops import *
-from problog.logic import Term, Constant
 from examples.DATES.evaluate import *
 from examples.DATES.data.load_data import load_data
 
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 EPOCHS = 10
 DIGITS = 4
@@ -48,7 +44,8 @@ model.set_optimizer(optimiser)
 # Load data
 D, D_val, D_test, D_regressval, D_regresstest, D_cur = load_data(DIGITS, CUR)
 
-year_direct_input = [tf.keras.Input([120, 200, 1])] + 4 * [tf.keras.Input([1])]
+year_direct_input = ([tf.keras.Input([120, 200, 1])] +
+                     [tf.keras.Input([1]), tf.keras.Input([1]), tf.keras.Input([1]), tf.keras.Input([1])])
 model.compile_query("year_direct", year_direct_input)
 model.train(D, EPOCHS, val_data=D_val,
             eval_fns=[simple_evaluate_OD_classification, simple_evaluate_regression_IoU],

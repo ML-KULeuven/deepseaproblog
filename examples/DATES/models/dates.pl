@@ -12,7 +12,7 @@ year_direct(Im, Year1, Year2, Year3, Year4) :-
     x_diff(1.0, B4, B4bound), smaller_than(0, B4bound),
     ordered_output([Y1, Y2, Y3, Y4]),
     digit(Im, Y1, Ny1), digit(Im, Y2, Ny2), digit(Im, Y3, Ny3), digit(Im, Y4, Ny4),
-    first_eq(Year1, Ny1), tf_eq(Year2, Ny2), tf_eq(Year3, Ny3), tf_eq(Year4, Ny4).
+    tf_eq(Year1, Ny1), tf_eq(Year2, Ny2), tf_eq(Year3, Ny3), tf_eq(Year4, Ny4).
 
 ordered_output([]).
 ordered_output([[Mu, Sigma]]).
