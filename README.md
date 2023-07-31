@@ -76,7 +76,7 @@ model.train(data)
 
 ## Experiments
 
-All experiments from [our paper](https://proceedings.mlr.press/v216/de-smet23a.html) are provided in [DeepSeaProbLog/examples](https://github.com/LennertDeSmet/DeepSeaProbLog/tree/dev/examples), together
+All experiments from [our paper](https://proceedings.mlr.press/v216/de-smet23a.html) are provided in [DeepSeaProbLog/examples](https://github.com/ML-KULeuven/deepseaproblog/tree/main/examples), together
 with a couple of novel tasks.
 
 ## 
