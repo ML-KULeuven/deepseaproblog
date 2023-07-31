@@ -4,7 +4,13 @@ This is the official repository of [DeepSeaProbLog](https://proceedings.mlr.pres
 DeepSeaProbLog is an extension of [DeepProbLog](https://github.com/ML-KULeuven/deepproblog) that integrates logic-based reasoning with (deep)
 probabilistic programming in discrete-continuous domains.
 
-## Installation
+## Requirements
+
+To use DeepSeaProbLog, you need to install the following dependencies:
+* [PySDD](https://pysdd.readthedocs.io/en/latest/)
+* [ProbLog](https://github.com/ML-KULeuven/problog)
+* [TensorFlow](https://www.tensorflow.org/)
+* [TensorFlow Probability](https://www.tensorflow.org/probability)
 
 ## Tutorial
 
